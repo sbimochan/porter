@@ -32,7 +32,7 @@ def check_status():
 	    return
 
     for service_name, port in config["services"].items():
-        check_service_status(status, port + EMPTY_SPACES, service_name + " is")
+        check_service_status(status, port + EMPTY_SPACES, service_name)
 
 
 if __name__ == "__main__":
