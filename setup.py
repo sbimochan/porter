@@ -1,5 +1,6 @@
-from subprocess import CalledProcessError, check_output
 from os import path
+from subprocess import CalledProcessError, check_output
+
 from yaml import safe_load as yaml_load
 
 EMPTY_SPACES = "    "
