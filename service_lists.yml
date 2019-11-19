@@ -1,0 +1,11 @@
+# Examples
+
+services:
+  Flask: 0.0.0.0:5000
+  SSL: 0.0.0.0:443
+  Airflow: 0.0.0.0:8080
+  nginx: 0.0.0.0:80
+  Postgres: 0.0.0.0:5432
+files:
+  Important credentials file: credentials.json
+  Log cleanup script: /etc/cron.daily/log_cleanup.sh
