@@ -11,7 +11,7 @@ def print_red(result):
     print("\x1b[31m" + result + "\x1b[0m")
 
 def check_service_status(status, port_to_check, message):
-    if port_to_check in status:
+    if port_to_check in str(status):
 	    print_green(message + " is running")
     else:
 	    print_red(message + " is not running")
