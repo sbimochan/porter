@@ -30,10 +30,8 @@ def check_script_status(file_location, message):
 
 def check_status():
     config = yaml_load(open("service_lists.yml"))
-    for script, script_location in config["files"].items():
-        check_script_status(script_location, script)
     try:
-	    status = check_output("netstat -plunt", shell=True)
+	    status = check_output("netstat -lunt", shell=True)
     except CalledProcessError as identifier:
 	    print("Please install netstat to run this service.")
 	    return
